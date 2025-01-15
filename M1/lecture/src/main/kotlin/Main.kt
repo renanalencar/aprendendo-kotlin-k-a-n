@@ -1,6 +1,15 @@
 package br.com.renanalencar
 
-fun main() {
+import kotlinx.coroutines.*
+
+fun main() = runBlocking {
+    launch {
+        delay(1000L)
+        println("Corrotina Kotlin!")
+    }
+}
+
+//fun main() {
 //    val name = "Kotlin"
 //    println("Hello, $name!")
 //
@@ -14,5 +23,5 @@ fun main() {
 //    olaMundo()
 //    calculadoraSimples()
 //    parOuImpar()
-    tabuada()
-}
+//    tabuada()
+//}

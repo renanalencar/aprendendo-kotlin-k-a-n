@@ -2,14 +2,14 @@ package br.com.renanalencar
 
 import kotlinx.coroutines.*
 
-fun main() = runBlocking {
+fun corrotina() = runBlocking {
     launch {
         delay(1000L)
         println("Corrotina Kotlin!")
     }
 }
 
-//fun main() {
+fun main() {
 //    val name = "Kotlin"
 //    println("Hello, $name!")
 //
@@ -24,4 +24,5 @@ fun main() = runBlocking {
 //    calculadoraSimples()
 //    parOuImpar()
 //    tabuada()
-//}
+    corrotina()
+}

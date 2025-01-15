@@ -4,8 +4,9 @@ import kotlinx.coroutines.*
 
 fun corrotina() = runBlocking {
     launch {
+        print("Corrotina ")
         delay(1000L)
-        println("Corrotina Kotlin!")
+        println("Kotlin!")
     }
 }
 
